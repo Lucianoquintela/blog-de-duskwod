@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+
+  color: white;
+  background: rgb(190, 253, 1);
+  background: radial-gradient(circle, #4e256e 0%, #000 100%);
+  /*
+  background: rgb(190, 253, 1);
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(70, 252, 103) 100%);
+  */
+}
+
+h1 {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+h2 {
+  margin-left: 15px;
+}
+
+button#toggleButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  /* Posiciona o botão no lado esquerdo */
+  z-index: 999;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  background-color: tranparent;
+  margin-top: 50px;
+  margin-left: 25px;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li {
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+ul li {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+}
+
+li:hover {
+  background: rgb(190, 253, 1);
+
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(70, 252, 103) 100%);
+}
+
+.sidebar {
+  /* Estilos anteriores aqui */
+  position: fixed;
+  left: -250px;
+  /* Oculta a barra lateral por padrão */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  transition: left 0.3s ease;
+  /* Adiciona transição para suavizar a animação */
+}
+
+.sidebar.show {
+  left: 0;
+  /* Mostra a barra lateral */
+}
+
+img#toggleButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  /* Posiciona a imagem no lado esquerdo */
+  z-index: 999;
+  width: 40px;
+  /* Largura da imagem */
+  height: auto;
+  /* Altura ajustada automaticamente para manter a proporção */
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
